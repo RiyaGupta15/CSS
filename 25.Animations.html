@@ -1,0 +1,54 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Animations</title>
+        <style>
+            .bluebox {
+                background-color: skyblue;
+                width:100px;
+                height:100px;
+                -webkit-animation : myanimation 3s;
+            }
+            @-webkit-keyframes myanimation {
+                from{background: green}
+                to{background: yellow}
+            } 
+            .redbox {
+                background-color: red;
+                color:white;
+                width:inherit;
+                height:100px;
+            }
+            .greenbox {
+                background-color: greenyellow;
+                width:100px;
+                height:100px;
+                position: relative;
+                 -webkit-animation : myanimation2 3s;
+            }
+            @-webkit-keyframes myanimation2 {
+                0% {background: green; left:0px; top:0px}
+                25% {background: red; left:100px; top:0px}
+                50% {background: yellow; left:100px; top:100px}
+                75% {background: blue; left:0px; top:100px}
+                100% {background: green; left:0px; top:0px}
+            } 
+        </style>
+    </head>
+    
+    <body>
+        <div class = "bluebox">
+            Facebook
+        </div>
+        
+        <div class = "redbox">
+            Apple
+        </div>
+        
+        <div class = "greenbox">
+            Microsoft
+        </div>
+    </body>
+</html>

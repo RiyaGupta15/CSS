@@ -1,0 +1,57 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Positioning</title>
+        <style>
+            .bluebox {
+                background-color: skyblue;
+                width:auto;
+                height:100px;
+                position: fixed;
+                top:30px;
+                left:30px;
+                z-index: 1;
+            }
+            .redbox {
+                background-color: red;
+                color:white;
+                width:inherit;
+                height:100px;
+                position: relative;
+                top:30px;
+                left:50px;
+                z-index: 2;
+            }
+            .greenbox {
+                background-color: greenyellow;
+                width:auto;
+                height:100px;
+                position: absolute;
+                top:40px;
+            }
+            .great {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class = "bluebox">
+            <p>Facebook is <span class = "great">great</span></p>
+        </div>
+        
+        <div class = "redbox">
+            Apple
+        </div>
+        
+        <div class = "greenbox">
+            Microsoft
+        </div>
+    </body>
+</html>
+
+<!--Position fixed means that it is fixed, relative means that it will change according to its previous place and absolute means it will change according to the parent of that box.
+top means it will leave that pixel of space from the top and left will leave that much space from the left.
+z-indexmeans which box will be shown on the top. If the z-index is large it will bw shown on the top for eg apple has z-index of 2 so it is shown on the top, then facebook and then microsoft at last becoz it has no z-index.-->

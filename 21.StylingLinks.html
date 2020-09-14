@@ -1,0 +1,58 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Styling Links</title>
+        <style>
+            a:link {
+                color:black;
+            }
+            a:hover {
+                font-size: 3em;
+            }
+            .bluebox {
+                background-color: skyblue;
+                width:auto;
+                height:100px;
+            }
+            div.bluebox a:active {
+                font-size: 5em;
+            }
+            .redbox {
+                background-color: red;
+                color:white;
+                width:inherit;
+                height:100px;
+            }
+            div.redbox a:visited {
+                color: aqua;
+            }
+            .greenbox {
+                background-color: greenyellow;
+                width:auto;
+                height:100px;
+            }
+            .great {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class = "bluebox">
+            Facebook
+            <p><a href = "http://www.google.com">Visit Link</a></p>
+        </div>
+        
+        <div class = "redbox">
+            Apple
+            <p><a href = "http://www.yahoo.com">Visit Link</a></p>
+        </div>
+        
+        <div class = "greenbox">
+            Microsoft
+            <p><a href = "http://www.amazon.com">Visit Link</a></p>
+        </div>
+    </body>
+</html>

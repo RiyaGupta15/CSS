@@ -1,0 +1,46 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Floating</title>
+        <style>
+            .bluebox {
+                background-color: skyblue;
+                width:auto;
+                height:100px;
+                float:left;
+            }
+            .redbox {
+                background-color: red;
+                color:white;
+                width:inherit;
+                height:100px;
+                float:right;
+            }
+            .greenbox {
+                background-color: greenyellow;
+                width:auto;
+                height:100px;
+                clear:both; <--This tag doesn't allow any floating either on left or right of microsoft-->
+            }
+            .great {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class = "bluebox">
+            <p>Facebook is <span class = "great">great</span></p>
+        </div>
+        
+        <div class = "redbox">
+            Apple
+        </div>
+        
+        <div class = "greenbox">
+            Microsoft
+        </div>
+    </body>
+</html>
